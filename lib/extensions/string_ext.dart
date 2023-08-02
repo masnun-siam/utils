@@ -28,7 +28,9 @@ extension StringExt on String {
 
   bool get isEmail =>
       RegExp('^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]').hasMatch(this);
-  bool get isPhone => RegExp(r'(^(?:[+0]9)?[0-9]{10,12}$)').hasMatch(this);
+  bool get isPhone => RegExp(
+          r'\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}')
+      .hasMatch(this);
   bool get isStrongPassword =>
       RegExp(r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$')
           .hasMatch(this);
