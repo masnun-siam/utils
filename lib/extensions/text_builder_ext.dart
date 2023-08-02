@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:utils/helpers/text_builder/text_builder.dart';
+import 'package:utils/helpers/text_builder.dart';
 
 extension TextBuilderExt on TextWidgetBuilder {
   TextWidgetBuilder get x8 => this..fontSize = 8;
@@ -90,6 +90,14 @@ extension TextBuilderExt on TextWidgetBuilder {
   TextWidgetBuilder get subtitle {
     return this
       ..fontSize = 14
+      ..fontWeight = FontWeight.w400
+      ..fontStyle = FontStyle.normal
+      ..color = Colors.black;
+  }
+
+  TextWidgetBuilder get body {
+    return this
+      ..fontSize = 12
       ..fontWeight = FontWeight.w400
       ..fontStyle = FontStyle.normal
       ..color = Colors.black;

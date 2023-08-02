@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'dart:ui';
 
-import 'package:utils/helpers/html_characters/html_character_entities.dart';
-import 'package:utils/helpers/text_builder/text_builder.dart';
+import 'package:utils/helpers/html_character_entities.dart';
+import 'package:utils/helpers/text_builder.dart';
 
 extension NullableStringExt on String? {
   String validate([String fallback = '']) => this ?? fallback;
