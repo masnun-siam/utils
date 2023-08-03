@@ -1,10 +1,9 @@
 name: utils
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
 
 environment:
-  sdk: '>=3.0.6 <4.0.0'
+  sdk: ">=3.0.6 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
@@ -13,7 +12,7 @@ dependencies:
     sdk: flutter
   formz: ^0.6.0
   intl: ^0.18.1
-  logger: ^2.0.1
+  logger: ^1.1.0
 
 dev_dependencies:
   flutter_test:
